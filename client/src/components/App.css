@@ -1,0 +1,96 @@
+* {
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+body {
+  background-image: url("./AppImg/market2.jpg");
+  background-repeat: repeat;
+ 
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+.card {
+  width: 400px;
+  /* margin-top: 75px; */
+}
+
+.w-100 {
+  margin-bottom: 30px;
+  margin-left: 300px;
+}
+
+.btn-primary {
+  margin-left: 0px;
+  background-color: #DD4E23!important;
+  border: 1px solid black !important;
+}
+
+.linkMargin {
+  margin-left: 130px;
+}
+
+.navbar-brand {
+    padding-left: 35px;
+  }
+  
+  .navbar {
+    margin: 0 -10px 20px -10px;
+   
+    height: 180px;
+    background-position-x: 500px;
+    background-repeat: no-repeat;
+  
+    background-color: bisque;
+    border-radius: 15px;
+  }
+  
+ 
+  .sidenav {
+    background-color: #2b4135bf;
+      height: 100vh;
+      width: 140px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      padding-top: 200px;
+    }
+    
+    .sidenav a {
+      /* padding: 6px 8px 6px 16px; */
+      padding: 8px;
+      text-decoration: none;
+      font-size: 25px;
+      color: white;
+      display: block;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    
+    .main {
+      /* margin-left: 160px; Same as the width of the sidenav */
+      font-size: 15px; /* Increased text to enable scrolling */
+      padding: 0px 10px;
+    }
+
+    .header {
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      /* background: #1abc9c; */
+      color: #0A2433;
+      font-size: 10px;
+    }
+
+    .header h1{
+      padding: 30px;
+      width: 100%;
+      text-align: center;
+    
+      color: #DD4F21;
+      font-size: 60px;
+    }

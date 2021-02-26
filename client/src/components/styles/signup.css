@@ -1,0 +1,28 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Snippet&display=swap');
+
+h2 {
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 3rem;
+    color: #DD4E23;
+    text-shadow: 2px 2px 5px rgb(201, 198, 198);
+
+}
+
+#name,
+#email,
+#password,
+#password-confirm,
+#zipCode,
+#selectSkills
+ {
+    font-family: 'Snippet', sans-serif;
+    
+}
+
+#skillsSelect {
+    font-family: 'Snippet', sans-serif;
+}
+
