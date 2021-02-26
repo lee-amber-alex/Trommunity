@@ -20,25 +20,3 @@ export const auth = app.auth()
 
 export default app;
 
-
-// production
-
-// <!-- The core Firebase JS SDK is always required and must be listed first -->
-// <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
-
-// <!-- TODO: Add SDKs for Firebase products that you want to use
-//      https://firebase.google.com/docs/web/setup#available-libraries -->
-
-// <script>
-//   // Your web app's Firebase configuration
-//   var firebaseConfig = {
-//     apiKey: "AIzaSyDuBpuzdaD850VLLZQFx7zt5clLdyjHIE0",
-//     authDomain: "tradeex-production.firebaseapp.com",
-//     projectId: "tradeex-production",
-//     storageBucket: "tradeex-production.appspot.com",
-//     messagingSenderId: "952310614777",
-//     appId: "1:952310614777:web:f7a402939838b899333028"
-//   };
-//   // Initialize Firebase
-//   firebase.initializeApp(firebaseConfig);
-// </script>
