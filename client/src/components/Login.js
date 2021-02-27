@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
-import { Form, Button, Card, Alert } from "react-bootstrap";
+import { Form, Button, Card, Alert, Container } from "react-bootstrap";
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
+// import { Container } from "react-bootstrap";
 import "./App.css";
 
 // can check current user by {currentUser && CurrentUser.email or .whatever}
@@ -31,14 +32,13 @@ export default function Login(props) {
 
   return (
     <> 
-    <div className="header" ><h1>Trommunity</h1>
-    <h5>No money? No problem.</h5>
-    </div>
-    
+   <div ClassName="container" >
     <div className="justify-content-center">
       <Card ClassName="card">
         <Card.Body>
+        <p className="text-center" >No money? No problem.</p>
           <h2 className="text-center mb-4">Login</h2>
+          
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
@@ -59,6 +59,7 @@ export default function Login(props) {
       <div className="justify-content-center linkMargin text-white">
         Need an account? <Link to="/signup">Sign Up</Link>
       </div>
+    </div>
     </div>
     </>
   );
