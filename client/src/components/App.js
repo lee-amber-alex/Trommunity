@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container } from "react-bootstrap";
+
 import { AuthProvider } from "../contexts/AuthContext";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import Dashboard from "./Dashboard/Dashboard";
@@ -13,13 +13,18 @@ import Signup from "./signup";
 import Login from "./Login";
 import "./App.css";
 import TransHistory from "./History/TransHistory";
+import Headers from "./Header/Header"
 
 function App() {
   return (
-    <Container
+    <>
+    <Headers/>
+    {/* <Container
+    
       className="align-items-center"
       style={{ minHeight: "100vh" }}
-    >
+    > */}
+      
       <div className="w-100" style={{ maxWidth: "450px" }}>
         <Router>
           <AuthProvider>
@@ -38,7 +43,8 @@ function App() {
           </AuthProvider>
         </Router>
       </div>
-    </Container>
+    {/* </Container> */}
+    </>
   );
 }
 
