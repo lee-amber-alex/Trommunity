@@ -10,6 +10,9 @@ const userSchema = new Schema({
   city: {
     type: String,
   },
+  img: {
+    type: String,
+  },
   skills: [{
     type: String,
   }],
