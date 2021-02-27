@@ -1,6 +1,8 @@
-.header {
+.header h1{
+  padding: 30px;
+  width: 100%;
   text-align: center;
-  color: white;
-  padding-top: 5%;
-  
+
+  color: #DD4F21;
+  font-size: 60px;
 }
