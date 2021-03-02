@@ -13,10 +13,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-// Send every other request to the React app
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
-// });
+
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/trommunity", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -25,8 +22,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/trommunity", {
 });
 
 app.use(routes);
-// app.use("/api/user", user)
-// app.use("/api/trade", trade)
+
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
