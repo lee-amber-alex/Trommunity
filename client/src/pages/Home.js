@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../components/Header/Header";
-
 import SideNavbar from "../components/Nav/SideNavbar";
 import HomeDashboard from "../components/HomeDashboard/HomeDashboard";
 
@@ -14,7 +12,7 @@ const Home = () => {
     <div>
       
       <SideNavbar />
-     <Header /> 
+     
 
       <div className="container main">
       
