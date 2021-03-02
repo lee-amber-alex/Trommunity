@@ -46,7 +46,7 @@ export default function Login(props) {
         </label>
         <input
           type="text"
-          placeholder="Enter Email"
+          placeholder="thecoolest@gmail.com"
           name="email"
           required
           ref={emailRef}
@@ -58,7 +58,7 @@ export default function Login(props) {
         <input
           id="password"
           type="password"
-          placeholder="Enter Password"
+          placeholder="at least 6 characters"
           name="psw"
           required
           ref={passwordRef} 
@@ -71,7 +71,7 @@ export default function Login(props) {
        </div>
       </form>
 
-      <div className="justify-content-center linkMargin text-white">
+      <div className="bg-bottom justify-content-center text-white">
         Need an account? <Link to="/signup">Sign Up</Link>
       </div>
 

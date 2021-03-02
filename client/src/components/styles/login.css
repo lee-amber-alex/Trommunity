@@ -44,6 +44,12 @@ input[type="password"]:focus {
 .btn:hover {
   opacity: 1 !important;
 }
+.bg-bottom{
+  display: flex;
+  background-color: #dd4e236f;
+  justify-content: center !important;
+  width: auto;
+}
 
 h2 {
   font-size: 3rem;

@@ -1,16 +1,37 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Snippet&display=swap');
-
 h2 {
-    font-family: 'RocknRoll One', sans-serif;
-    font-size: 3rem;
-    color: #DD4E23;
-    text-shadow: 2px 2px 5px rgb(201, 198, 198);
-
+  font-family: "RocknRoll One", sans-serif;
+  font-size: 3rem;
+  color: #dd4e23;
+  text-shadow: 2px 2px 5px rgb(201, 198, 198);
 }
 
+.btn {
+  background-color: #dd4e23 !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  border: none !important;
+  cursor: pointer !important;
+  opacity: 0.9 !important;
+}
+
+.btn-div {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.btn:hover {
+  opacity: 1 !important;
+}
+
+.bg-bottom{
+    display: flex;
+    background-color: #DD4E23;
+    justify-content: center !important;
+    width: auto;
+    padding-bottom: 20px;
+}
+/* 
 #name,
 #email,
 #password,
@@ -25,4 +46,4 @@ h2 {
 #skillsSelect {
     font-family: 'Snippet', sans-serif;
 }
-
+ */
