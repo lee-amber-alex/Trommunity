@@ -3,15 +3,26 @@
   box-sizing: border-box;
 }
 
-body {
+body, html{
+  height: 100vh;
+}
+
+body{
+
   background-image: url("./AppImg/market2.jpg");
+  height: 100vh;
+  /* background-position: bottom !important; */
+  background-position-y: bottom; 
+  background-repeat: repeat;
+  background-size: cover;
+
+  /* background-image: url("./AppImg/market2.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position-y: bottom; 
-  
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: relative; */
 }
 
 .card {
@@ -24,11 +35,11 @@ body {
   margin-left: 300px;
 }
 
-.btn-primary {
+/* .btn-primary {
   margin-left: 0px;
   background-color: #DD4E23!important;
   border: 1px solid black !important;
-}
+} */
 
 .linkMargin {
   margin-left: 130px;
