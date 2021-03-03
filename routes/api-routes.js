@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const mongoose = require("mongoose");
 const User = require("../models/user");
 const Trade = require("../models/trade");
+const usersController = require("../controllers/usersController");
 
 // Populates Homedashboard
 router.get("/api/trades/:id", (req, res) => {
@@ -71,16 +71,9 @@ router.post("/api/claimed", ({ body }, res) => {
 });
 
 // Creates User from signup page
-router.post("/api/user", ({ body }, res) => {
-  User.create(body)
-    .then((userInfo) => {
-      res.json(userInfo);
-      console.log("User into DB", userInfo);
-    })
-    .catch((err) => {
-      res.json(err);
-    });
-});
+router.route("/api/user")
+.post(usersController.create)
+
 
 // Creates Trades from TradePostForm
 router.post("/api/trades", ({ body }, res) => {
