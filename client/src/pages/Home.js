@@ -1,6 +1,7 @@
 import React from "react";
-import SideNavbar from "../components/Nav/SideNavbar";
-import HomeDashboard from "../components/HomeDashboard/HomeDashboard";
+// import SideNavbar from "../components/Nav/SideNavbar";
+import Nav from "../components/Nav/Nav"
+// import HomeDashboard from "../components/HomeDashboard/HomeDashboard";
 
 const styles = {
   margin: {
@@ -11,17 +12,8 @@ const Home = () => {
   return (
     <div>
       
-      <SideNavbar />
-     
-
-      <div className="container main">
+      <Nav/>
       
-        <div className="row">
-          <div className="col-md-10" style={styles.margin}>
-            <HomeDashboard />
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

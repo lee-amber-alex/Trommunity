@@ -1,0 +1,12 @@
+.navbar{
+  height: auto !important;
+  width: 100% !important;
+  margin: 0 !important;
+  align-items: center !important;
+}
+
+.header-nav{
+  font-size: 2.25rem !important;
+  margin-left: 0 !important;
+}
+

@@ -1,0 +1,25 @@
+.form-container {
+  width: 60vw !important;
+  height: auto;
+  background-color: #41d9dcc8;
+  margin-top: 70px;
+  border-radius: 1%;
+}
+
+.btn {
+  margin-top: 10px;
+}
+
+.form{
+    padding: 30px;
+}
+
+.content-style{
+    padding: 15px;
+    font-size: 20px;
+}
+
+.description {
+    height: auto;
+    width: 100%;
+}
