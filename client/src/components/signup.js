@@ -1,14 +1,13 @@
 import React, { useRef, useState } from "react";
-import { Form, Button, Card, Row, Col, Alert } from "react-bootstrap";
+import { Alert } from "react-bootstrap";
 import API from "../utils/API";
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
-import "./styles/signup.css";
-// can check current user by {currentUser && CurrentUser.email or .whatever}
+import "../components/Styles/signup.css";
 
 export default function Signup(props) {
   const nameRef = useRef();
-  const { signup, currentUser } = useAuth();
+  const { signup} = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [options, setOptions] = useState([]);
@@ -45,7 +44,7 @@ export default function Signup(props) {
         userID: user.user.uid,
         email: emailRef.current.value,
         city: cityRef.current.value,
-        trade: options,
+        skills: options,
       }).then((result) => {
         console.log("Going to API.js", result);
       });
@@ -58,61 +57,100 @@ export default function Signup(props) {
   }
   return (
     <>
-      <Card>
-        <Card.Body>
-          <h2 className="text-center mb-4">Sign Up</h2>
-          {/* {currentUser.email} */}
-          {error && <Alert variant="danger">{error}</Alert>}
-          <Form onSubmit={handleSubmit}>
-            <Form.Group id="name">
-              <Form.Label>Name</Form.Label>
-              <Form.Control type="name" ref={nameRef} required />
-            </Form.Group>
-            <Form.Group id="email">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" ref={emailRef} required />
-            </Form.Group>
-            <Form.Group id="password">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" ref={passwordRef} required />
-            </Form.Group>
-            <Form.Group id="password-confirm">
-              <Form.Label>Password Confirmation</Form.Label>
-              <Form.Control type="password" ref={passwordConfirmRef} required />
-            </Form.Group>
-            <Form.Group id="zipCode">
-              <Form.Label>City</Form.Label>
-              <Form.Control type="text" ref={cityRef} required />
-            </Form.Group>
-            <Form.Group id="skillsSelect">
-              <Form.Label>Select Skills</Form.Label>
-              <Form.Control
-                value={options}
-                onChange={handleSelectChange}
-                as="select"
-                multiple
-              >
-                <option>Cooking</option>
-                <option>Cleaning</option>
-                <option>Landscaping</option>
-                <option>Auto Mechanics</option>
-                <option>Education/Tutoring</option>
-                <option>Plumbing</option>
-                <option>Childcare</option>
-                <option>Pet Care</option>
-                <option>Other</option>
-                <option>Choose Later</option>
-              </Form.Control>
-            </Form.Group>
-            <Button disabled={loading} className="w-100" type="submit">
-              Sign Up
-            </Button>
-          </Form>
-        </Card.Body>
-      </Card>
-      <div className="justify-content-center linkMargin text-white">
-        Already have an account?<Link to="login">Login</Link>
-      </div>
+      <form
+        // action="/action_page.php"
+        className="container"
+        onSubmit={handleSubmit}
+      >
+        <p className="text-center">get what you need without spending a dime.</p>
+        <h2 className="text-center mb-4">signup</h2>
+        {error && <Alert variant="danger">{error}</Alert>}
+        <label for="name">
+          <b>name</b>
+        </label>
+        <input
+          type="text"
+          placeholder="jane doe"
+          name="name"
+          required
+          ref={nameRef}
+        />
+        <label for="email">
+          <b>email</b>
+        </label>
+        <input
+          type="text"
+          placeholder="janedoe@email.com"
+          name="email"
+          required
+          ref={emailRef}
+        />
+
+        <label ref={passwordRef} for="psw">
+          <b>password</b>
+        </label>
+        <input
+          id="password"
+          type="password"
+          placeholder="enter password"
+          name="psw"
+          required
+          ref={passwordRef}
+        />
+        <label for="psw">
+          <b>password confirmation</b>
+        </label>
+        <input
+          id="re-password"
+          type="password"
+          placeholder="re enter password"
+          name="psw"
+          required
+          ref={passwordConfirmRef}
+        />
+        <label for="city">
+          <b>where are you located?</b>
+        </label>
+        <input
+          type="text"
+          placeholder="awesome town"
+          name="city"
+          required
+          ref={cityRef}
+        />
+        <div>
+          <label>what are your trading skills?</label>
+          <div>
+            <select
+              value={options}
+              onChange={handleSelectChange}
+              for="select-choice-2"
+              name="select-choice-2"
+              id="select-choice-2"
+              multiple
+            >
+              <option>cooking</option>
+              <option>cleaning</option>
+              <option>landscaping</option>
+              <option>auto Mechanics</option>
+              <option>education/tutoring</option>
+              <option>plumbing</option>
+              <option>childcare</option>
+              <option>petcare</option>
+              <option>other</option>
+              <option>select later</option>
+            </select>
+          </div>
+        </div>
+        <div className=" btn-div ">
+          <button disabled={loading} type="submit" className="btn">
+            let's trade!
+          </button>
+        </div>
+        <div className="link" ><Link  to="login">already have an account?</Link></div>
+        
+      </form>
+  
     </>
   );
 }

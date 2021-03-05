@@ -7,7 +7,7 @@
   margin-right: auto;
   /* right: 0;
     margin: 20px; */
-  max-width: 300px;
+  max-width: 500px !important;
   padding: 16px;
   background-color: white;
 }
@@ -46,7 +46,7 @@ input[type="password"]:focus {
 }
 .bg-bottom{
   display: flex;
-  background-color: #dd4e236f;
+  
   justify-content: center !important;
   width: auto;
 }

@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Alert} from "react-bootstrap";
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
-// import { Container } from "react-bootstrap";
+import Header from "../components/Header/Header"
 import "./App.css";
 import "../components/Styles/login.css"
 
@@ -33,16 +33,17 @@ export default function Login(props) {
 
   return (
     <>
+    <Header/>
       <form
         action="/action_page.php"
         className="container"
         onSubmit={handleSubmit}
       >
-        <p className="text-center">No money? No problem.</p>
-        <h2 className="text-center mb-4">Login</h2>
+        <p className="text-center">no money? no problem.</p>
+        <h2 className="text-center mb-4">login</h2>
         {error && <Alert variant="danger">{error}</Alert>}
         <label for="email">
-          <b>Email</b>
+          <b>email</b>
         </label>
         <input
           type="text"
@@ -53,7 +54,7 @@ export default function Login(props) {
         />
 
         <label ref={passwordRef} for="psw">
-          <b>Password</b>
+          <b>password</b>
         </label>
         <input
           id="password"
@@ -66,13 +67,14 @@ export default function Login(props) {
         <div className=" btn-div ">
 
         <button disabled={loading} type="submit" className="btn">
-          Let's trade!
+          let's trade!
         </button>
        </div>
       </form>
 
       <div className="bg-bottom justify-content-center text-white">
-        Need an account? <Link to="/signup">Sign Up</Link>
+        
+        <a href="/signup">need an account?</a>
       </div>
 
       
