@@ -109,3 +109,27 @@ body{
       color: #DD4F21;
       font-size: 60px;
     }
+
+    a:link {
+      color: #236480;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:visited {
+      color:#2DC794;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color:#39DEF2;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+    
+    a:active {
+      color: #2ECF94;
+      background-color: transparent;
+      text-decoration: underline;
+    }

@@ -5,6 +5,9 @@ h2 {
   text-shadow: 2px 2px 5px rgb(201, 198, 198);
 }
 
+.container{
+  padding-bottom: 20px !important;
+}
 .btn {
   background-color: #dd4e23 !important;
   color: white !important;
@@ -26,10 +29,15 @@ h2 {
 
 .bg-bottom{
     display: flex;
-    background-color: #DD4E23;
+    
     justify-content: center !important;
     width: auto;
     padding-bottom: 20px;
+}
+
+.link {
+  text-align: center !important;
+  padding-top: 5px;
 }
 /* 
 #name,

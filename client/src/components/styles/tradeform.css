@@ -1,9 +1,10 @@
 .form-container {
   width: 60vw !important;
   height: auto;
-  background-color: #41d9dcc8;
-  margin-top: 70px;
+  /* background-color: #41d9dcc8; */
+  margin-top: 50px;
   border-radius: 1%;
+
 }
 
 .btn {
