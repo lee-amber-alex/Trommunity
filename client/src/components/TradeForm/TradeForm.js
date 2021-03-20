@@ -40,7 +40,7 @@ const TradeForm = () => {
 
   return (
     <>
-      <div className="container form-container">
+      <div className="container-forced form-container">
         <form
           className="form"
           onSubmit={handleFormSubmit}
@@ -55,14 +55,14 @@ const TradeForm = () => {
             onChange={(e) => setNeed(e.target.value)}
           />
 
-          <label className="content-style" for="skills">
+          <label className="content-style" >
             What item or service will you trade in return?
           </label>
           <div className="content-style">
             <select
               value={options}
               onChange={handleSelectChange}
-              for="select-choice-2"
+              // for="select-choice-2"
               name="select-choice-2"
               id="select-choice-2"
               multiple
@@ -78,8 +78,8 @@ const TradeForm = () => {
               <option>Other</option>
             </select>
           </div>
-
-          <label className="content-style" for="subject">
+{/* for="subject" */}
+          <label className="content-style" >
             Additional info:
           </label>
           <br />
