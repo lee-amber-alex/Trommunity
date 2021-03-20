@@ -1,5 +1,7 @@
 /* Add styles to the form container */
-
+* {
+  box-sizing: border-box;
+}
 .container {
   /* position: absolute; */
   position: relative;

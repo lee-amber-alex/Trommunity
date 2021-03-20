@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 .form-container {
   width: 60vw !important;
   height: auto;
@@ -6,6 +9,8 @@
   border-radius: 1%;
 
 }
+
+
 
 .btn {
   margin-top: 10px;

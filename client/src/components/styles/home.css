@@ -1,5 +1,17 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.col{
+  float: left !important;
+}
+
 .container{
   
   margin-top: 20px;
   border-radius: 10px;
+  width: 100% !important;
+  height: auto;
+  background-color: none;
 }
