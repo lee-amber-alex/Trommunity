@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MenuItems } from "./MenuItems";
 import { Link } from "react-router-dom";
-import "../Styles/nav.css"
+import "../Styles/nav.css";
 
 export default function Dropdown() {
   const [click, setClick] = useState(false);
@@ -21,7 +21,9 @@ export default function Dropdown() {
                 className={item.cName}
                 to={item.path}
                 onClick={() => setClick(false)}
-              >{item.title}</Link>
+              >
+                {item.title}
+              </Link>
             </li>
           );
         })}
